@@ -46,6 +46,13 @@ IP                   MAC
 [+] 192.168.1.1 is online (ICMP reply)
 [+] 192.168.1.10 is online (ICMP reply)
 ```
+## 🛡️ Legal Disclaimer
 
+This project is for educational purposes and authorized network testing only.
+⚠️ Do not scan networks without explicit permission – unauthorized scanning is illegal.
+
+## 📜 License
+
+This project is licensed under the MIT License – you’re free to use, modify, and share, with attribution.
 
 
