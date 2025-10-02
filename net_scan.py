@@ -28,11 +28,13 @@ online_clients = []
 
 # --- ARP SCAN ---
 print("[+] Scanning with ARP...")
-ether = Ether(dst="ff:ff:ff:ff:ff:ff")  # Broadcast
+ether = Ether(dst="ff:ff:ff:ff:ff:ff")  # Destination MAC address broadcast
 arp = ARP(pdst=target_network)          # Target network
 probe = ether / arp
 
 answered, unanswered = srp(probe, timeout=3, verbose=0)
+# [ answer , unanswered ]
+# answered cosists of [ sent , received ]
 
 for _, received in answered:
     online_clients.append({'ip': received.psrc, 'mac': received.hwsrc})
